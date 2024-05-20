@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors types</title>
+    <style>
+        /*1. element selector */
+        span{
+            display: block;
+            height: 300px;
+            width: 300px;
+            background-color: green;
+        }
+        /* 2.universal selector */
+        *{
+            font-size: 25px;
+            border: 10px solid black;
+        }
+        /* 3.id selector */
+        #a1{
+            height: 300px;
+            width: 300px;
+            background-color: whitesmoke;
+        }
+        /* 4.class selector */
+        .b1{
+            height: 300px;
+            width: 300px;
+            background-color: orange;
+        }
+        /*5. Attribute selector */
+        a[href="https://www.google.com/"] {
+            display: block;
+            height: 300px;
+            width: 300px;
+            background-color: orange; 
+            text-decoration: none;
+}
+        /* 6.Group selector */
+        .b1, #a1, span, a[href="https://www.google.com/"]{
+            display: inline-block;
+        }
+        /* 7.Pesudo element selector:: */
+        h1::after{
+            content: url('https://gifdb.com/images/high/blushing-hug-emoji-3oiog8j560s1blzu.gif');
+        }
+        #a2{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+        /* 8.Pesudo class selector */
+        div#a2:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="b1">CSS Class selector</div>
+    <div id="a1">CSS Id selector</div>
+    <span>CSS element selector</span>
+    <a href="https://www.google.com/">Google</a>
+    <h1>CSS Pesudo element selector</h1>
+    <div id="a2">pesudo class selector</div>
+</body>
+</html>
