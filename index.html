@@ -54,6 +54,30 @@
         div#a2:hover{
             background-color: green;
         }
+        #p{
+            height: 400px;
+            width: 400px;
+            background-color: red;
+        }
+        #c1{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+        #c2{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+        /* 9. decendent selector 
+        parent:pesudo_class_selector child{
+            code;
+        }
+        */
+
+        #p:hover #c1{
+            background-color: purple;
+        }
     </style>
 </head>
 <body>
@@ -63,5 +87,9 @@
     <a href="https://www.google.com/">Google</a>
     <h1>CSS Pesudo element selector</h1>
     <div id="a2">pesudo class selector</div>
+    <div id="p">
+        <div id="c1"></div>
+        <div id="c2"></div>
+    </div>
 </body>
 </html>
